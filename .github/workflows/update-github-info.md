@@ -38,3 +38,8 @@ Keep Mona's GitHub Info website current with concise, practical updates from off
 8. Review the resulting diff for accuracy, clear source attribution, concise writing, and valid Markdown.
 9. Open one pull request with the changes for Mona to review. Use the `create_pull_request` safe output rather than writing directly to the default branch. Explain which sources were used and summarize the content changes in the pull request body.
 10. If there are no worthwhile updates or no changes are needed, do not open an empty pull request; report that no update was necessary.
+
+## Constraints
+
+- Do not run `gh aw compile` or any other compilation command.
+- Do not create, update, or commit any `.lock.yml` file. Only edit `site/content/github-info.md` and propose that change through the pull request safe output.
